@@ -13,6 +13,6 @@ class task extends Model
     protected $fillable = ['content'];
 
     public static $rules = array(
-        'content' => 'required|max:20'
+        'content' => 'max:20',
     );
 }
