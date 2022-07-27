@@ -30,17 +30,17 @@
 			<th>削除</th>
 		</tr>
 		@foreach($items as $task)
-		<form action="/todo/update" method="post">
+		<tr>
+			<td>{{$task->updated_at}}</td>
+		<form action="{{ route('todo.update', ['id' => $task->id]) }}" method="post">
 		@csrf
-			<tr>
-				<td>{{$task->updated_at}}</td>
-				<td>
-					<input type="text" name="content" value="{{$task->content}}">
-				</td>
-				<td><button name="update">更新</button></td>
-				<td><button>削除</button></td>
-			</tr>
+			<td>
+				<input type="text" name="content" value="{{$task->content}}">
+			</td>
+			<td><button>更新</button></td>
 		</form>
+			<td><button>削除</button></td>
+		</tr>
 		@endforeach
 	</table>
 </body>

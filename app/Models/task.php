@@ -5,14 +5,11 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class task extends Model
+class Task extends Model
 {
-    use HasFactory;
-
-    protected $table = 'tasks';
-    protected $fillable = ['content'];
+    protected $guarded = ['id'];
 
     public static $rules = array(
-        'content' => 'max:20',
+        'content' => 'max:20'
     );
 }
