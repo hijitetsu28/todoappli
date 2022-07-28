@@ -10,6 +10,6 @@ class Task extends Model
     protected $guarded = ['id'];
 
     public static $rules = array(
-        'content' => 'max:20'
+        'content' => 'required|max:20'
     );
 }

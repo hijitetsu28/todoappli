@@ -31,7 +31,7 @@
 		</tr>
 		@foreach($items as $task)
 		<tr>
-			<td>{{$task->updated_at}}</td>
+			<td>{{$task->created_at}}</td>
 		<form action="{{ route('todo.update', ['id' => $task->id]) }}" method="post">
 		@csrf
 			<td>
@@ -39,7 +39,10 @@
 			</td>
 			<td><button>更新</button></td>
 		</form>
+		<form action="{{ route('todo.delete', ['id' => $task->id]) }}" method="post">
+		@csrf
 			<td><button>削除</button></td>
+		</form>
 		</tr>
 		@endforeach
 	</table>
