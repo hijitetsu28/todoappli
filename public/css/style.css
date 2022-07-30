@@ -1,0 +1,104 @@
+h1 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.mein {
+  background-color: rgb(45, 25, 124);
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+
+.container {
+  width: 50%;
+  background-color: #fff;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.up__container {
+  margin-bottom: 25px;
+}
+
+.create {
+  display: flex;
+  justify-content: space-between;
+}
+
+.create-text {
+  border-radius: 5px;
+  border: 1px solid #CCCCCC;
+  width: 76%;
+  padding: 8px;
+  outline: none;
+}
+
+.create-btn {
+  color: rgb(220,112,250);
+  font-weight: bold;
+  border: 2px solid rgb(220,112,250);
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 8px 16px;
+  font-size: 12px;
+}
+
+.create-btn:hover {
+  background-color: rgb(220, 112, 250);
+  color: #fff;
+  transition: 0.5s;
+}
+
+table {
+  text-align: center;
+  width: 100%
+}
+
+tr {
+  height: 50px;
+}
+
+.edit-text {
+  border-radius: 5px;
+  border: 1px solid #CCCCCC;
+  padding: 5px;
+  width: 90%;
+  outline: none;
+}
+
+.update-btn {
+  color: rgb(249, 151, 112);
+  font-weight: bold;
+  border: 2px solid rgb(249, 151, 112);
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 8px 16px;
+  font-size: 12px;
+}
+
+.update-btn:hover {
+  background-color: rgb(249, 151, 112);
+  color: #fff;
+  transition: 0.5s;
+}
+
+.delete-btn {
+  color: rgb(112, 250, 220);
+  font-weight: bold;
+  border: 2px solid rgb(112, 250, 220);
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 8px 16px;
+  font-size: 12px;
+}
+
+.delete-btn:hover {
+  background-color: rgb(112, 250, 220);
+  color: #fff;
+  transition: 0.5s;
+}
